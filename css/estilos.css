@@ -1,15 +1,32 @@
+/*---------------- Variables*/
+:root{
+    --green-color: #7ACC2D;
+    --white-color: white;
+    /*----------- Tipografia*/
+    --normal: 16px;
+    /* ---------- Espaciado*/
+    --space: 10px;
+    /* ----------Box shadow*/
+    --box: 0px 0 2px 1px #e6e5e9;
+}
+/*---------------- variables*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap');
+
+
+
 html,body {
     margin: 0;
     padding: 0;
-    font-size: 12px;
-    font-family:Helvetica;
+    font-size: var(--normal) ;
+    font-family: 'Open Sans', sans-serif;;
 }
 
 nav{
     display: flex;
-    background: #7ACC2D;
-    padding: 10px;
-    color: white;
+    background: var(--green-color);
+    padding: var(--space);
+    color: var(--white-color);
     justify-content: space-between;
     align-items: center;
 }
@@ -30,7 +47,7 @@ nav li a{
 }
 
 nav li a:hover{
-    color: white;
+    color: var(--white-color);
 }
 
 /* ----------------------------------------Main seccion */
@@ -54,15 +71,15 @@ nav li a:hover{
 
 .product{
     margin-top: -230px;
-    padding: 10px;
+    padding: var(--space);
     /* border: red solid 1px; */
 }
 
 .product .content{
     padding: 15px;
     /* border: red solid 1px; */
-    background-color: white;
-    box-shadow: 0 0 1px #8a8989;
+    background-color: var(--white-color);
+    box-shadow: var(--box);
     border-radius: 10px;
 
 }
@@ -72,8 +89,8 @@ nav li a:hover{
 }
 
 .main_button{
-    background-color: #7ACC2D;
-    color: white;
+    background-color:var(--green-color);
+    color: var(--white-color);
     width: 100%;
     border: 0;
     padding: 10px;
@@ -83,3 +100,56 @@ nav li a:hover{
  .main_button:hover{
      background-color: #599a1c;
  }
+
+ /* ------------benefits seccion*/
+
+ .benefits_seccion{
+     padding: 10%;
+     display: flex;
+ }
+ .benefits_seccion img{
+    max-height: 100px;
+ }
+  .itens_benefits{
+    text-align: center;
+    padding: 20px;
+  }
+  hr{
+    border: 0 none #c5c5c5;
+    border-top: 1px solid #c5c5c5;
+    height: 1px;
+    margin: 5px 0;
+    display: block;
+    clear: both;
+  }
+  /* ------------ mentions seccion*/
+  .mentions_seccion h2{
+    text-align: center;
+  }
+
+  .mention{
+      display: flex;
+      padding: 2%;   
+  }
+
+.mention_peaple{
+    box-shadow: var(--box);
+    border-radius: 3px;
+    margin: 10px;
+}
+  .mention_peaple img{
+    width: 100%;
+  }
+
+  .text{
+      padding: 10px;
+  }
+/* -------------------footer seccion*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--normal);
+    background-color:#313337;
+    padding: var(--space);
+    color: var(--white-color);
+}
