@@ -60,7 +60,7 @@ nav li a:hover{
 
 .products{
     background-image: url("../images/curve.png");
-    max-height: 50px;
+    height: 50px;
     background-size: cover;
     background-position: center top;
     padding: 15%;
@@ -108,7 +108,7 @@ nav li a:hover{
      display: flex;
  }
  .benefits_seccion img{
-    max-height: 100px;
+    height: 100px;
  }
   .itens_benefits{
     text-align: center;
@@ -129,7 +129,7 @@ nav li a:hover{
 
   .mention{
       display: flex;
-      padding: 2%;   
+      padding: 2%; 
   }
 
 .mention_peaple{
